@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+.secao {
+  padding: 100px 4%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-left: 40px;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 85vh;
+}
+
+.principal h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -5px;
+}
+
+.principal h1 span {
+  color: #158ab5;
+}
+
+.principal p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  color: #bbb;
+}
+
+.principal p span {
+  font-weight: bold;
+  color: #158ab5;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #158ab5;
+}
+
+.titulo-secao {
+  font-size: 42px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 130px;
+  height: 4px;
+  background-color: #158ab5;
+}
+
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.img-projeto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.card-projeto {
+  border-radius: 10px;
+  background-color: #161616;
+  overflow: hidden;
+}
+
+.info-projeto {
+  padding: 20px;
+}
+
+.info-projeto h3 {
+  margin-bottom: 10px;
+}
+
+.info-projeto p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.info-projeto a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #158ab5;
+  border-radius: 4px;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.img-sobre {
+  height: 350px;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+.conteudo-sobre h2 {
+  margin-bottom: 30px;
+}
+
+.conteudo-sobre p {
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tag-habilidades {
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #158ab5;
+  background-color: rgba(77, 124, 254, 0.2);
+}
+
+.botoes-contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  min-width: 160px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.email {
+  background-color: #ea4335;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.github {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 5%;
+  border-top: solid 1px #222;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  header {
+    padding: 25px 10px;
+  }
+
+  ul {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .secao {
+    padding: 60px 20px;
+  }
+
+  .principal {
+    padding: 10px;
+  }
+
+  .principal h1 {
+    font-size: 60px;
+  }
+
+  .principal p {
+    font-size: 18px;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .img-sobre {
+    height: auto;
+  }
+
+  .img-principal {
+    display: none;
+  }
+} /* Telas menores */
+
+@media (max-width: 1025px) {
+  header {
+    padding: 60px auto;
+  }
+
+  .secao {
+    padding: 50px 40px;
+  }
+
+  .principal h1 {
+    font-size: 65px;
+  }
+
+  .principal p {
+    font-size: 20px;
+  }
+
+  .img-sobre {
+    height: auto;
+  }
+
+  .img-principal {
+    display: none;
+  }
+} /* Telas maiores */
+
+@media (max-width: 1440px) {
+  .img-sobre {
+    height: auto;
+  }
+
+  .efeito-cursor {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .efeito-cursor:hover {
+    transform: translateY(-5px);
+  }
+}
