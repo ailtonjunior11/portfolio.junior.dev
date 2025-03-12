@@ -1,3 +1,4 @@
+/* Styles global */
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +10,22 @@
   scroll-behavior: smooth;
 }
 
+/* Styles body */
 body {
   background: #0a0a0a;
 }
 
+/* Styles seção */
 .secao {
   padding: 100px 4%;
 }
 
+/* Styles header */
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  margin-left: 40px;
+  padding: 25px;
+  margin-left: 30px;
 }
 
 ul {
@@ -30,10 +33,52 @@ ul {
   gap: 50px;
 }
 
+/* Styles botão topo */
+.btntopo {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+
+  z-index: 100;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.btntopo.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btntopo i {
+  font-size: 2.5rem;
+
+  color: #f64600;
+  border-radius: 50%;
+}
+
+/* Styles imagem */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles seção principal */
 .principal {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   min-height: 85vh;
   margin-left: 30px;
 }
@@ -46,7 +91,7 @@ ul {
 }
 
 .principal h1 span {
-  color: #158ab5;
+  color: #f64600;
 }
 
 .principal p {
@@ -58,7 +103,11 @@ ul {
 
 .principal p span {
   font-weight: bold;
-  color: #158ab5;
+  color: #f64600;
+}
+
+.img-principal img {
+  mask-image: linear-gradient(to bottom, #000000 25%, rgba(0, 0, 0, 0.01) 95%);
 }
 
 .btn-link {
@@ -66,9 +115,10 @@ ul {
   padding: 12px 30px;
   font-weight: bold;
   border-radius: 4px;
-  background-color: #158ab5;
+  background-color: #f64600;
 }
 
+/* Styles titulo seção */
 .titulo-secao {
   font-size: 42px;
   margin-bottom: 60px;
@@ -82,9 +132,10 @@ ul {
   bottom: -15px;
   width: 130px;
   height: 4px;
-  background-color: #158ab5;
+  background-color: #f64600;
 }
 
+/* Styles seção projetos */
 .grade-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -121,10 +172,11 @@ ul {
 .info-projeto a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #158ab5;
+  background-color: #f64600;
   border-radius: 4px;
 }
 
+/* Styles seção sobre */
 .sobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,10 +212,11 @@ ul {
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  color: #158ab5;
+  color: #f64600;
   background-color: rgba(77, 124, 254, 0.2);
 }
 
+/* Styles seção contato */
 .botoes-contatos {
   display: flex;
   flex-wrap: wrap;
@@ -201,15 +254,11 @@ ul {
   background-color: #333;
 }
 
+/* Styles footer */
 footer {
   text-align: center;
   padding: 20px 5%;
   border-top: solid 1px #222;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 /* Responsividade */
@@ -222,6 +271,10 @@ img {
   ul {
     gap: 20px;
     justify-content: center;
+  }
+
+  .logo {
+    display: none;
   }
 
   .secao {
@@ -286,7 +339,7 @@ img {
     transition: 0.2s;
   }
   ul li a:hover {
-    background-color: #158ab5;
+    background-color: #f64600;
   }
   .img-sobre {
     height: auto;
