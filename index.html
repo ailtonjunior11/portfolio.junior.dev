@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Link para o Boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Link para o CSS -->
+  <!-- Link para o ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- Link para o CSS -->
   <link rel="stylesheet" href="styles.css">
   <title>Protfólio | Ailton Junior</title>
 </head>
 
 <body>
+  <button class="btntopo" onclick="backtopo()">
+    <i class='bx bxs-up-arrow-circle'></i>
+    Topo
+  </button> <!-- Botão topo -->
+
   <header>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -22,7 +28,7 @@
   </header> <!-- Cabeçalho -->
 
   <section class="principal" id="home">
-    <div>
+    <div class="conteudo-principal">
       <h1>Olá, eu sou <span>Ailton Junior</span>.</h1>
 
       <p>Desenvolvedor <span>Front End</span>, criativo, dedicado e focado em experiências digitais com interfaces
@@ -33,7 +39,7 @@
     </div>
 
     <div class="img-principal">
-      <img src="./img/img-astronau.png" alt="imagem principal">
+      <img src="./img/imagem-principal.png" alt="imagem principal">
     </div> <!-- Imagem principal -->
 
   </section> <!-- Seção principal -->
@@ -43,7 +49,7 @@
 
     <div class="grade-projetos">
 
-      <div class="card-projeto">
+      <div class="card-projeto card-projeto-1">
         <img class="img-projeto" src="./img/img-mario.png" alt="imagem-projeto">
 
         <div class="info-projeto">
@@ -54,7 +60,7 @@
         </div>
       </div> <!-- Card 1 -->
 
-      <div class="card-projeto">
+      <div class="card-projeto card-projeto-2">
         <img class="img-projeto" src="./img/img-tecnofix.png" alt="imagem-projeto">
 
         <div class="info-projeto">
@@ -65,7 +71,7 @@
         </div>
       </div> <!-- Card 2 -->
 
-      <div class="card-projeto">
+      <div class="card-projeto card-projeto-3">
         <img class="img-projeto" src="./img/img-nichos.png" alt="imagem-projeto">
 
         <div class="info-projeto">
@@ -76,7 +82,7 @@
         </div>
       </div> <!-- Card 3 -->
 
-      <div class="card-projeto">
+      <div class="card-projeto card-projeto-4">
         <img class="img-projeto" src="./img/img-barbershop.png" alt="imagem-projeto">
 
         <div class="info-projeto">
@@ -94,7 +100,7 @@
     <h2 class="titulo-secao">Sobre mim</h2>
 
     <div class="sobre">
-      <img class="img-sobre" src="./img/foto.jpg" alt="foto ailton">
+      <img class="img-sobre" src="./img/img-programador.jpg" alt="foto ailton">
 
       <div class="conteudo-sobre">
         <h2>Desenvolvedor Front-end apaixonado em criar soluções digitais.</h2>
@@ -169,5 +175,7 @@
   </footer> <!-- Rodapé -->
 
 </body> <!-- Corpo da página -->
+
+<script src="./script.js"></script> <!-- Link para o arquivo JavaScript -->
 
 </html>
