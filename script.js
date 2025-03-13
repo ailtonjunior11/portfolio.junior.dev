@@ -22,17 +22,27 @@ sr.reveal(".card-projeto-1", {
 
 sr.reveal(".card-projeto-2", {
   duration: 1500,
-  delay: 300,
+  delay: 400,
 });
 
 sr.reveal(".card-projeto-3", {
   duration: 1500,
-  delay: 400,
+  delay: 600,
 });
 
 sr.reveal(".card-projeto-4", {
   duration: 1500,
-  delay: 450,
+  delay: 800,
+});
+
+sr.reveal(".card-projeto-5", {
+  duration: 1500,
+  delay: 1000,
+});
+
+sr.reveal(".card-projeto-6", {
+  duration: 1500,
+  delay: 1200,
 });
 
 // ScrollReveal configurações sobre mim
