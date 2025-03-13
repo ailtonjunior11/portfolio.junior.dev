@@ -79,8 +79,27 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   min-height: 85vh;
   margin-left: 30px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.redes-sociais a i {
+  font-size: 25px;
+  color: #f64600;
 }
 
 .principal h1 {
@@ -169,10 +188,16 @@ img {
   margin-bottom: 15px;
 }
 
+.link-projeto {
+  display: flex;
+  justify-content: space-around;
+}
+
 .info-projeto a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #f64600;
+  padding: 8px 20px;
+  color: #f64600;
+  background-color: rgba(77, 124, 254, 0.2);
   border-radius: 4px;
 }
 
@@ -340,7 +365,8 @@ footer {
     transition: 0.2s;
   }
   ul li a:hover {
-    background-color: #f64600;
+    color: #f64600;
+    background-color: rgba(77, 124, 254, 0.2);
   }
   .img-sobre {
     height: auto;
