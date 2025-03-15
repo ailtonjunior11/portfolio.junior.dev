@@ -24,8 +24,8 @@ body {
 header {
   display: flex;
   align-items: center;
-  padding: 25px;
-  margin-left: 30px;
+  padding: 25px 10%;
+  /* margin-left: 30px; */
 }
 
 ul {
@@ -306,8 +306,7 @@ footer {
 
 @media (max-width: 768px) {
   header {
-    padding: 25px auto;
-    margin: 10px 0 10px 30px;
+    margin: 0 auto;
   }
 
   ul {
@@ -372,6 +371,11 @@ footer {
 } /* Telas medias */
 
 @media (max-width: 1440px) {
+  header {
+    padding: 30px;
+    margin-left: 30px;
+  }
+
   ul li a {
     padding: 5px 10px;
     border-radius: 5px;
