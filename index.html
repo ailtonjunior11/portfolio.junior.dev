@@ -24,32 +24,42 @@
   </button> <!-- Botão topo -->
 
   <header>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#contatos">Contatos</a></li>
-    </ul>
-  </header> <!-- Cabeçalho -->
+    <div class="menu-container">
+      <div class="hamburguer" id="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </div> <!-- Menu hamburguer -->
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#home" class="menu-link">Home</a></li>
+          <li><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#contatos" class="menu-link">Contatos</a></li>
+        </ul>
+      </nav> <!-- Menu -->
+    </div> <!-- Menu container -->
+  </header> <!-- Cabecalho -->
 
   <section class="principal" id="home">
     <div class="conteudo-principal">
       <div class="redes-sociais">
-        <a href="https://www.linkedin.com/in/ailton-junior23/" class="link-rede-social efeito-cursor">
+        <a href="https://www.linkedin.com/in/ailton-junior23/" class="link-rede-social">
           <i class='bx bxl-linkedin'></i>
           Linkedin
         </a> <!-- Link para o Linkedin -->
-        <a href="https://github.com/ailtonjunior11" class="link-rede-social efeito-cursor">
+        <a href="https://github.com/ailtonjunior11" class="link-rede-social">
           <i class='bx bxl-github'></i>
           GitHub
         </a> <!-- Link para o GitHub -->
         <a href="https://wa.me/5581994910802?text=Ol%C3%A1%20tudo%20bem%2C%20o%20que%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F"
           class="
-          link-rede-social efeito-cursor">
+          link-rede-social">
           <i class='bx bxl-whatsapp'></i>
           Whatsapp
         </a> <!-- Link para o Whatsapp -->
-        <a href="mailto:ailtonjr11.oficial@gmail.com" class="link-rede-social efeito-cursor">
+        <a href="mailto:ailtonjr11.oficial@gmail.com" class="link-rede-social">
           <i class='bx bx-envelope'></i>
           E-mail
         </a> <!-- Link para o E-mail -->
@@ -61,12 +71,12 @@
         intuitivas e
         interativas.</p>
 
-      <a href="#projetos" class="btn-link efeito-cursor">Ver Projetos</a>
+      <a href="#projetos" class="btn-link">Ver Projetos</a>
     </div>
 
-    <div class="img-principal">
+    <!--  <div class="img-principal">
       <img src="./img/imagem-principal.png" alt="imagem principal">
-    </div> <!-- Imagem principal -->
+    </div>  Imagem principal -->
 
   </section> <!-- Seção principal -->
 
@@ -83,9 +93,9 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://super-mario-servicos.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto</a>
-            <a href="https://github.com/ailtonjunior11/Super-Mario-Bros" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻 Código</a>
+            <a href="https://super-mario-servicos.vercel.app/" target="_blank">🌐 Projeto</a>
+            <a href="https://github.com/ailtonjunior11/Super-Mario-Bros" target="_blank" class="codigo">🧑🏻‍💻
+              Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
       </div> <!-- Card 1 -->
@@ -98,9 +108,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://tecnofix-github-io.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto</a>
-            <a href="https://github.com/ailtonjunior11/tecnofix.github.io" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻
+            <a href="https://tecnofix-github-io.vercel.app/" target="_blank">🌐 Projeto</a>
+            <a href="https://github.com/ailtonjunior11/tecnofix.github.io" target="_blank" class="codigo">🧑🏻‍💻
               Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
@@ -114,9 +123,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://ninhonichos-github-io.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto </a>
-            <a href="https://github.com/ailtonjunior11/ninhonichos.github.io" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻
+            <a href="https://ninhonichos-github-io.vercel.app/" target="_blank">🌐 Projeto </a>
+            <a href="https://github.com/ailtonjunior11/ninhonichos.github.io" target="_blank" class="codigo">🧑🏻‍💻
               Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
@@ -130,9 +138,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://your-barbershop.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto</a>
-            <a href="https://github.com/ailtonjunior11/your-barbershop.github.io" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻
+            <a href="https://your-barbershop.vercel.app/" target="_blank">🌐 Projeto</a>
+            <a href="https://github.com/ailtonjunior11/your-barbershop.github.io" target="_blank" class="codigo">🧑🏻‍💻
               Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
@@ -145,9 +152,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://pagina-captura-leads.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto</a>
-            <a href="https://github.com/ailtonjunior11/Pagina-Captura-Leads" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻
+            <a href="https://pagina-captura-leads.vercel.app/" target="_blank">🌐 Projeto</a>
+            <a href="https://github.com/ailtonjunior11/Pagina-Captura-Leads" target="_blank" class="codigo">🧑🏻‍💻
               Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
@@ -160,9 +166,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet suscipit amet eos, deleniti ad omnis
             voluptatibus ex et quo explicabo.</p>
           <div class="link-projeto">
-            <a href="https://tourist-slider.vercel.app/" target="_blank" class="efeito-cursor">🌐 Projeto</a>
-            <a href="https://github.com/ailtonjunior11/tourist-slider" target="_blank"
-              class="efeito-cursor codigo">🧑🏻‍💻
+            <a href="https://tourist-slider.vercel.app/" target="_blank">🌐 Projeto</a>
+            <a href="https://github.com/ailtonjunior11/tourist-slider" target="_blank" class="codigo">🧑🏻‍💻
               Código</a>
           </div> <!-- Link projeto -->
         </div> <!-- Informações projeto -->
@@ -207,7 +212,7 @@
 
     <div class="botoes-contatos">
       <a href="https://wa.me/5581994910802?text=Ol%C3%A1%20tudo%20bem%2C%20o%20que%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F"
-        class="botao-contato whatsapp efeito-cursor">
+        class="botao-contato whatsapp">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
           viewBox="0 0 16 16">
           <path
@@ -216,7 +221,7 @@
         <span>WhatsApp</span>
       </a> <!-- Botao WhatsApp -->
 
-      <a href="mailto:ailtonjr11.oficial@gmail.com" class="botao-contato email efeito-cursor">
+      <a href="mailto:ailtonjr11.oficial@gmail.com" class="botao-contato email">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
           viewBox="0 0 16 16">
           <path
@@ -225,7 +230,7 @@
         <span>Email</span>
       </a> <!-- Botao Email -->
 
-      <a href="https://www.linkedin.com/in/ailton-junior23/" class="botao-contato linkedin efeito-cursor">
+      <a href="https://www.linkedin.com/in/ailton-junior23/" class="botao-contato linkedin">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
           viewBox="0 0 16 16">
           <path
@@ -234,7 +239,7 @@
         <span>LinkedIn</span>
       </a> <!-- Botao LinkedIn -->
 
-      <a href="https://github.com/ailtonjunior11" class="botao-contato github efeito-cursor">
+      <a href="https://github.com/ailtonjunior11" class="botao-contato github">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
           viewBox="0 0 16 16">
           <path
