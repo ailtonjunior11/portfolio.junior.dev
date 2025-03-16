@@ -1,3 +1,28 @@
+// Menu Mobile configurações
+document.getElementById("hamburguer").addEventListener("click", function () {
+  const navMenu = document.getElementById("nav-menu");
+  const hamburguer = document.getElementById("hamburguer");
+
+  if (navMenu.style.display === "block") {
+    navMenu.style.display = "none";
+    hamburguer.classList.remove("ativo");
+  } else {
+    navMenu.style.display = "block";
+    hamburguer.classList.add("ativo");
+  }
+});
+
+// Fechar o menu ao clicar em qualquer link
+document.querySelectorAll(".menu-link").forEach((link) => {
+  link.addEventListener("click", function () {
+    const navMenu = document.getElementById("nav-menu");
+    const hamburguer = document.getElementById("hamburguer");
+
+    navMenu.classList.remove("ativo");
+    hamburguer.classList.remove("ativo");
+  });
+});
+
 // ScrollReveal configurações
 const sr = ScrollReveal({ reset: true });
 
@@ -45,23 +70,24 @@ sr.reveal(".card-projeto-6", {
   delay: 1200,
 });
 
-// ScrollReveal configurações sobre mim
+// ScrollReveal configurações sobre
 sr.reveal(".img-sobre", {
-  origin: "left",
-  distance: "350px",
+  origin: "top",
+  distance: "100px",
   delay: 50,
   duration: 1500,
   opacity: 0,
 });
 
 sr.reveal(".conteudo-sobre", {
-  origin: "right",
+  origin: "bottom",
   distance: "80px",
   delay: 50,
   duration: 1500,
   opacity: 0,
 });
 
+// ScrollReveal configurações contatos
 sr.reveal(".botoes-contatos", {
   origin: "bottom",
   distance: "70px",
