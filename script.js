@@ -1,26 +1,32 @@
 // Menu Mobile configurações
-document.getElementById("hamburguer").addEventListener("click", function () {
-  const navMenu = document.getElementById("nav-menu");
-  const hamburguer = document.getElementById("hamburguer");
+let btnMenuMobile = document.getElementById("btn-menu-mobile");
+let line1 = document.querySelector(".line-menu-mobile-1");
+let line2 = document.querySelector(".line-menu-mobile-2");
+let menuMobile = document.getElementById("nav-mobile");
+let linkMenuMobile = document.getElementById(".link-menu-mobile");
 
-  if (navMenu.style.display === "block") {
-    navMenu.style.display = "none";
-    hamburguer.classList.remove("ativo");
-  } else {
-    navMenu.style.display = "block";
-    hamburguer.classList.add("ativo");
-  }
+let body = document.querySelector("body");
+
+// Menu Mobile funções
+btnMenuMobile.addEventListener("click", () => {
+  line1.classList.toggle("active1");
+  line2.classList.toggle("active2");
+  menuMobile.classList.toggle("abrir-menu");
+
+  body.classList.toggle("overflow-no");
 });
 
-// Fechar o menu ao clicar em qualquer link
-document.querySelectorAll(".menu-link").forEach((link) => {
-  link.addEventListener("click", function () {
-    const navMenu = document.getElementById("nav-menu");
-    const hamburguer = document.getElementById("hamburguer");
+// Função fechar menu mobile
+menuMobile.addEventListener("click", () => {
+  menuMobile.classList.remove("abrir-menu");
+  line1.classList.remove("active1");
+  line2.classList.remove("active2");
+});
 
-    navMenu.classList.remove("ativo");
-    hamburguer.classList.remove("ativo");
-  });
+// Função efeito rolagem header
+window.addEventListener("scroll", () => {
+  let header = document.getElementById("header");
+  header.classList.toggle("rolagem-header", window.scrollY > 0);
 });
 
 // ScrollReveal configurações
