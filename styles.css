@@ -208,7 +208,7 @@ img {
   align-items: center;
 
   min-height: 100vh;
-  margin: 100px 4% 0;
+  margin: 0 4%;
 }
 
 .redes-sociais {
@@ -428,6 +428,10 @@ footer {
 
   .btn-menu-mobile {
     display: block;
+  }
+
+  .principal {
+    margin: 150px 4% 0;
   }
 }
 
