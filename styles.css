@@ -206,6 +206,7 @@ img {
 .principal {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   min-height: 100vh;
   margin: 0 4%;
@@ -253,9 +254,13 @@ img {
   color: #f64600;
 }
 
-/* .img-principal img {
+.img-principal img {
+  display: none;
+}
+
+.img-principal img {
   mask-image: linear-gradient(to bottom, #000000 25%, rgba(0, 0, 0, 0.01) 95%);
-} */
+}
 
 .btn-link {
   display: inline-block;
@@ -474,5 +479,9 @@ footer {
 
   .efeito-transform:hover {
     transform: translateY(-5px);
+  }
+
+  .img-principal img {
+    display: block;
   }
 }
