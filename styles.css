@@ -262,6 +262,25 @@ img {
   mask-image: linear-gradient(to bottom, #000000 25%, rgba(0, 0, 0, 0.01) 95%);
 }
 
+/* Animação imagem */
+.img-principal img {
+  animation: flutuante 3s ease-in-out infinite;
+}
+
+/* Animação flutuante */
+@keyframes flutuante {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .btn-link {
   display: inline-block;
   padding: 12px 30px;
