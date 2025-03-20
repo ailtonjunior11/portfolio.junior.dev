@@ -361,6 +361,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+
+  cursor: default;
 }
 
 .tag-habilidades {
@@ -431,11 +433,15 @@ footer {
   }
 
   .principal {
-    margin: 130px 4% 0;
+    margin: 115px 4% 0;
   }
 }
 
 @media (min-width: 900px) {
+  .principal h1 {
+    font-size: 58px;
+  }
+
   .sobre {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -450,5 +456,23 @@ footer {
   /* Styles header com efeito rolagem */
   header.rolagem-header a {
     color: #fff;
+  }
+
+  .principal h1 {
+    font-size: 65px;
+  }
+
+  .principal p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+  }
+
+  .efeito-transform {
+    transition: 0.5s;
+  }
+
+  .efeito-transform:hover {
+    transform: translateY(-5px);
   }
 }
