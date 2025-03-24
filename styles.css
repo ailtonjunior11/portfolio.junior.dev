@@ -10,10 +10,25 @@
   scroll-behavior: smooth;
 }
 
+/* Styles variáveis */
+:root {
+  --cor-principal: #1e90ff;
+  --cor-secundaria: #222e4e;
+  --cor-textos: #ffffff;
+  --cor-secundaria-textos: #bbb;
+  --cor-fundo: #0a0a0a;
+
+  /* Cores redes sociais */
+  --cor-linkedin: #0077b5;
+  --cor-github: #333;
+  --cor-email: #ea4335;
+  --cor-whatsapp: #25d366;
+}
+
 /* Styles body */
 body {
   position: relative;
-  background: #0a0a0a;
+  background: var(--cor-fundo);
 }
 
 /* Styles seção */
@@ -55,7 +70,7 @@ header {
 
 /* Styles header com efeito rolagem */
 header.rolagem-header {
-  background-color: rgb(34, 46, 78);
+  background-color: var(--cor-secundaria);
 }
 
 /* Styles nav desktop */
@@ -75,7 +90,7 @@ header.rolagem-header {
   padding-inline: 20px;
   padding: 10px;
 
-  color: #bbb;
+  color: var(--cor-secundaria-textos);
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
@@ -88,7 +103,7 @@ header.rolagem-header {
   height: 3px;
   margin: 10px 0;
 
-  background-color: #ffffff;
+  background-color: var(--cor-secundaria);
   transition: 0.3s;
 }
 
@@ -127,7 +142,7 @@ header.rolagem-header {
   height: 0;
 
   text-align: center;
-  background-color: rgb(20, 30, 56);
+  background-color: var(--cor-secundaria);
   overflow: hidden;
   transition: 0.5s;
 }
@@ -156,9 +171,9 @@ body.overflow-no {
 }
 
 .nav-mobile a:hover {
-  box-shadow: 0 0 8px #ffffff;
-  background-color: #ffffff;
-  color: #161616;
+  box-shadow: 0 0 8px var(--cor-secundaria);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
 }
 
 /* Styles botão topo */
@@ -192,7 +207,7 @@ body.overflow-no {
 .btntopo i {
   font-size: 2.5rem;
 
-  color: #f64600;
+  color: var(--cor-principal);
   border-radius: 50%;
 }
 
@@ -228,7 +243,7 @@ img {
 
 .redes-sociais a i {
   font-size: 25px;
-  color: #f64600;
+  color: var(--cor-principal);
 }
 
 .principal h1 {
@@ -239,19 +254,19 @@ img {
 }
 
 .principal h1 span {
-  color: #f64600;
+  color: var(--cor-principal);
 }
 
 .principal p {
   font-size: 17px;
   margin-bottom: 20px;
   max-width: 500px;
-  color: #bbb;
+  color: var(--cor-secundaria-textos);
 }
 
 .principal p span {
   font-weight: bold;
-  color: #f64600;
+  color: var(--cor-principal);
 }
 
 .img-principal img {
@@ -286,7 +301,7 @@ img {
   padding: 12px 30px;
   font-weight: bold;
   border-radius: 4px;
-  background-color: #f64600;
+  background-color: var(--cor-principal);
 }
 
 /* Styles titulo seção */
@@ -303,7 +318,7 @@ img {
   bottom: -10px;
   width: 80px;
   height: 3px;
-  background-color: #f64600;
+  background-color: var(--cor-principal);
 }
 
 /* Styles seção projetos */
@@ -323,7 +338,7 @@ img {
 
 .card-projeto {
   border-radius: 10px;
-  background-color: #161616;
+  background-color: var(--cor-secundaria);
   overflow: hidden;
 }
 
@@ -338,7 +353,7 @@ img {
 
 .info-projeto p {
   font-size: 15px;
-  color: #bbb;
+  color: var(--cor-secundaria-textos);
   margin-bottom: 15px;
 }
 
@@ -350,8 +365,11 @@ img {
 .info-projeto a {
   display: inline-block;
   padding: 8px 20px;
-  color: #f64600;
-  background-color: rgba(77, 124, 254, 0.2);
+
+  color: var(--cor-textos);
+  background-color: #4d7cfe33;
+
+  box-shadow: 2px 2px 1px var(--cor-principal);
   border-radius: 4px;
 }
 
@@ -368,7 +386,6 @@ img {
 .img-sobre {
   width: 100%;
   height: auto;
-  background-color: #161616;
   border-radius: 10px;
 }
 
@@ -377,7 +394,7 @@ img {
 }
 
 .conteudo-sobre p {
-  color: #bbb;
+  color: var(--cor-secundaria-textos);
   margin-bottom: 10px;
 }
 
@@ -397,8 +414,8 @@ img {
   margin: 0 10px 10px 0;
 
   border-radius: 5px;
-  color: #f64600;
-  background-color: rgb(38, 58, 114);
+  color: var(--cor-textos);
+  background-color: var(--cor-secundaria);
 }
 
 /* Styles seção contato */
@@ -423,27 +440,27 @@ img {
   min-width: 160px;
 }
 
-.whatsapp {
-  background-color: #25d366;
-}
-
-.email {
-  background-color: #ea4335;
-}
-
 .linkedin {
-  background-color: #0077b5;
+  background-color: var(--cor-linkedin);
 }
 
 .github {
-  background-color: #333;
+  background-color: var(--cor-github);
+}
+
+.whatsapp {
+  background-color: var(--cor-whatsapp);
+}
+
+.email {
+  background-color: var(--cor-email);
 }
 
 /* Styles footer */
 footer {
   text-align: center;
   padding: 20px 5%;
-  border-top: solid 1px #222;
+  border-top: solid 1px var(--cor-secundaria);
 }
 
 /* Responsividade */
@@ -479,7 +496,7 @@ footer {
 
   /* Styles header com efeito rolagem */
   header.rolagem-header a {
-    color: #fff;
+    color: var(--cor-secundaria);
   }
 
   .principal h1 {
