@@ -37,8 +37,7 @@ body {
 }
 
 /* Styles fundo body */
-.image-fundo {
-  display: none;
+.video-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +75,7 @@ header.rolagem-header {
 
 /* Styles nav desktop */
 .nav-desktop {
-  display: flex;
+  display: none;
   justify-content: center;
   padding: 8px 5%;
 }
@@ -111,7 +110,7 @@ header.rolagem-header {
 
 /* Styles linhas menu mobile */
 .btn-menu-mobile {
-  display: none;
+  display: block;
 }
 
 .btn-menu-mobile .line-menu-mobile-1 {
@@ -441,7 +440,7 @@ footer {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .nav-desktop {
     display: none;
   }
@@ -453,6 +452,11 @@ footer {
   .principal {
     justify-content: center;
     margin: 55px 0 0;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 }
 
@@ -472,7 +476,7 @@ footer {
   }
 }
 
-@media (max-width: 1114px) {
+@media (min-width: 1114px) {
   .principal {
     justify-content: center;
     margin: 55px 0 0;
@@ -481,13 +485,22 @@ footer {
   .principal h1 {
     font-size: 65px;
   }
-}
 
-@media (min-width: 1280px) {
-  .image-fundo {
+  .sobre {
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  .nav-desktop {
     display: block;
   }
 
+  .btn-menu-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
   .nav-desktop a:hover {
     background-color: rgb(43, 57, 99);
   }
@@ -498,6 +511,14 @@ footer {
   }
 
   /* Styles seção principal */
+  .nav-desktop {
+    display: block;
+  }
+
+  .btn-menu-mobile {
+    display: none;
+  }
+
   .principal {
     justify-content: start;
     margin: 80px 0 0 4%;
@@ -519,5 +540,10 @@ footer {
 
   .efeito-transform:hover {
     transform: translateY(-5px);
+  }
+
+  .sobre {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
