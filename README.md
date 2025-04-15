@@ -1,14 +1,12 @@
-<h1>
-  <strong>
+<h1 align="center">
     Junior Dev | Portfólio
-  </strong>
 </h1>
 
-<h2>
-  <i>
-    Projeto portfólio dev, criado com o intuito de mastrar todo meu conhecimento e experiência como desenvolvedor front-end.
-  </i>
+ <h2>
+    Portfólio criado com o intuito de mastrar todo meu conhecimento e experiência como desenvolvedor front-end.
 </h2>
+
+### Com os conhecimentos e experiências adquiridas, pude praticar tudo que ja aprendi e venho aprendendo ao longo do tempo como desenvolvedor front-end, logo abaixo tem um breve resumo de toda estrutura do projeto.
 
 <br>
 
@@ -26,9 +24,9 @@
 
 <br>
 
-<h3>
+<h4>
   Tecnologias usadas ⬇️
-  </h3>
+  </h4>
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -37,20 +35,19 @@
 
 <br>
 
-<h3>Ilustração da página desktop 🖼️📸📹</h3>
+<h4>Ilustração da página desktop 🖼️📸📹</h4>
 
 https://github.com/user-attachments/assets/f23dacc5-3e51-4a3d-87ac-229599a16bbc
 
 <br> 
 
-<h3>Ilustração da página mobile 🖼️📸📹</h3>
-
+<h4>Ilustração da página mobile 🖼️📸📹</h4>
 
 https://github.com/user-attachments/assets/46a58f5b-ad6d-4adb-a9fe-b61f096b7658
 
 <br>
 
-<h4>
+<h5>
   <i>2025 🧑🏻‍💻 Desenvolvido por <strong>Ailton Junior</strong></i>
-</h4>
+</h5>
 
