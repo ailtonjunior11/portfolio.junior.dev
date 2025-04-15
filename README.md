@@ -1,5 +1,5 @@
 <h1 align="center">
-    Junior Dev | Portfólio
+    Junior Dev | Portfólio - Front-End
 </h1>
 
  <h2>
