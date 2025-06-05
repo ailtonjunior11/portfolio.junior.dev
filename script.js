@@ -53,27 +53,37 @@ sr.reveal(".card-projeto-1", {
 
 sr.reveal(".card-projeto-2", {
   duration: 1500,
-  delay: 400,
+  delay: 450,
 });
 
 sr.reveal(".card-projeto-3", {
   duration: 1500,
-  delay: 600,
+  delay: 650,
 });
 
 sr.reveal(".card-projeto-4", {
   duration: 1500,
-  delay: 800,
+  delay: 850,
 });
 
 sr.reveal(".card-projeto-5", {
   duration: 1500,
-  delay: 1000,
+  delay: 1050,
 });
 
 sr.reveal(".card-projeto-6", {
   duration: 1500,
-  delay: 1200,
+  delay: 1250,
+});
+
+sr.reveal(".card-projeto-7", {
+  duration: 1500,
+  delay: 1450,
+});
+
+sr.reveal(".card-projeto-8", {
+  duration: 1500,
+  delay: 1650,
 });
 
 // ScrollReveal configurações sobre
