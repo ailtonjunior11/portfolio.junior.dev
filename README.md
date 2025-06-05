@@ -3,7 +3,7 @@
 </h1>
 
  <h2>
-    Portfólio criado com o intuito de mastrar todo meu conhecimento e experiência como desenvolvedor front-end.
+    Portfólio criado com o intuito de mastrar todo meu conhecimento e experiência como programador / desenvolvedor front-end.
 </h2>
 
 ### Com os conhecimentos e experiências adquiridas, pude praticar tudo que ja aprendi e venho aprendendo ao longo do tempo como desenvolvedor front-end, logo abaixo tem um breve resumo de toda estrutura do projeto.
