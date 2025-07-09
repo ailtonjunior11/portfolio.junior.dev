@@ -37,7 +37,11 @@ body {
 }
 
 /* Styles fundo body */
-.video-background {
+body::before {
+  content: "";
+  background-image: url(./img/img-background.png);
+  background-size: cover;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -48,7 +52,7 @@ body {
   height: 100%;
 
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.3;
   object-fit: cover;
 }
 
@@ -89,6 +93,8 @@ header.rolagem-header {
 .nav-desktop ul li a {
   padding-inline: 20px;
   padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
 
   color: var(--cor-secundaria-textos);
   border-radius: 5px;
@@ -336,6 +342,7 @@ img {
 .link-projeto {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
 .info-projeto a {
