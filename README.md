@@ -37,7 +37,7 @@
 
 <h4>Ilustração da página desktop 🖼️📸📹</h4>
 
-https://github.com/user-attachments/assets/f23dacc5-3e51-4a3d-87ac-229599a16bbc
+https://github.com/user-attachments/assets/07048b3f-6b91-42d3-aea8-134889fc6ba7
 
 <br> 
 
