@@ -156,11 +156,6 @@ header.rolagem-header {
   transition: 0.5s;
 }
 
-/* Styles body com overflow */
-body.overflow-no {
-  overflow: hidden;
-}
-
 /* Styles nav mobile aberto */
 .nav-mobile.abrir-menu {
   width: 100%;
