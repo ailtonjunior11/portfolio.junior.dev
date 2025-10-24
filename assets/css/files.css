@@ -1,0 +1,7 @@
+@import "./global.config.css";
+
+@import "./files/header.css";
+@import "./files/home.css";
+@import "./files/projects.css";
+@import "./files/about.css";
+@import "./files/contacts.css";

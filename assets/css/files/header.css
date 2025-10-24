@@ -1,0 +1,160 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 10px;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+/* Styles header com efeito rolagem */
+header.rolagem-header {
+  background-color: var(--cor-secundaria);
+}
+
+/* Styles nav desktop */
+.nav-desktop {
+  display: none;
+  justify-content: center;
+  padding: 8px 5%;
+}
+
+.nav-desktop ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-desktop ul li a {
+  padding-inline: 20px;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+
+  color: var(--cor-secundaria-textos);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Styles botão menu mobile */
+.btn-menu-mobile {
+  cursor: pointer;
+}
+
+.btn-menu-mobile div {
+  height: 3px;
+  margin: 10px 0;
+
+  background-color: var(--cor-secundaria);
+  transition: 0.3s;
+}
+
+/* Styles linhas menu mobile */
+.btn-menu-mobile {
+  display: block;
+}
+
+.btn-menu-mobile .line-menu-mobile-1 {
+  width: 30px;
+  background-color: var(--cor-textos);
+}
+
+.btn-menu-mobile .line-menu-mobile-2 {
+  width: 20px;
+  background-color: var(--cor-textos);
+}
+
+.btn-menu-mobile .line-menu-mobile-1.active1 {
+  transform: rotate(45deg) translate(30%);
+}
+
+.btn-menu-mobile .line-menu-mobile-2.active2 {
+  transform: rotate(-45deg) translate(30%);
+  width: 30px;
+}
+
+/* Styles nav mobile */
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+
+  width: 0;
+  height: 0;
+
+  text-align: center;
+  background-color: var(--cor-secundaria);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Styles nav mobile aberto */
+.nav-mobile.abrir-menu {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-mobile ul {
+  width: 100%;
+}
+
+.nav-mobile a {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 50px 0;
+  transition: 0.5s;
+}
+
+.nav-mobile a:active {
+  border: solid 1px var(--cor-principal);
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .btn-menu-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 1114px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .btn-menu-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-desktop a:hover {
+    background-color: rgb(43, 57, 99);
+  }
+
+  /* Styles header com efeito rolagem */
+  header.rolagem-header a {
+    color: var(--cor-secundaria);
+  }
+
+  /* Styles seção principal */
+  .nav-desktop {
+    display: block;
+  }
+
+  .btn-menu-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,136 @@
+.principal {
+  display: flex;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.conteudo-principal {
+  margin: 0 4%;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.redes-sociais a i {
+  font-size: 25px;
+  color: var(--cor-principal);
+}
+
+.principal h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -5px;
+}
+
+.principal h1 span {
+  color: var(--cor-principal);
+}
+
+.principal p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  color: var(--cor-secundaria-textos);
+}
+
+.principal p span {
+  font-weight: bold;
+  color: var(--cor-principal);
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: var(--cor-principal);
+}
+
+/* Styles titulo seção */
+.titulo-secao {
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 3px;
+  background-color: var(--cor-principal);
+}
+
+@media (min-width: 768px) {
+  .principal {
+    justify-content: center;
+    margin: 55px 0 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .principal {
+    justify-content: center;
+    margin: 55px 0 0;
+  }
+
+  .principal h1 {
+    font-size: 60px;
+  }
+
+  .principal p {
+    font-size: 20px;
+    max-width: 623px;
+  }
+}
+
+@media (min-width: 1114px) {
+  .principal {
+    justify-content: center;
+    margin: 55px 0 0;
+  }
+
+  .principal h1 {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .principal {
+    justify-content: start;
+    margin: 80px 0 0 4%;
+  }
+
+  .principal h1 {
+    font-size: 65px;
+  }
+
+  .principal p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+  }
+
+  .efeito-transform {
+    transition: 0.5s;
+  }
+
+  .efeito-transform:hover {
+    transform: translateY(-5px);
+  }
+}
