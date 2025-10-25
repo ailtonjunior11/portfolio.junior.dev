@@ -55,6 +55,14 @@ body::before {
   object-fit: cover;
 }
 
+/* Style seção divisão */
+.division {
+  width: 30%;
+  height: 1rem;
+  border-radius: 0 1.2rem 0 0;
+  background: #272f44ee;
+}
+
 /* Styles botão topo */
 .btntopo {
   display: flex;

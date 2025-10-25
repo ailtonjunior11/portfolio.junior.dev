@@ -1,3 +1,7 @@
+#projetos {
+  background: #272f44f8;
+}
+
 .grade-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -6,25 +10,29 @@
 
 .img-projeto {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 0.8rem;
   border-radius: 10px;
 }
 
 .card-projeto {
+  height: auto;
+  padding: 0 0 1rem;
+  text-align: center;
+  background: #4d7cfe1e;
   border-radius: 10px;
-  background-color: var(--cor-secundaria);
+  box-shadow: 1px 2px 5px var(--cor-principal);
   overflow: hidden;
 }
 
 .info-projeto {
-  padding: 20px;
+  padding: 0 1rem;
 }
 
 .info-projeto h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0.9rem;
 }
 
 .info-projeto p {
