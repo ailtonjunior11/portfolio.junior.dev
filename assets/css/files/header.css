@@ -2,12 +2,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
   padding: 10px;
   z-index: 100;
   transition: 0.5s;
@@ -15,7 +13,9 @@ header {
 
 /* Styles header com efeito rolagem */
 header.rolagem-header {
-  background-color: var(--cor-secundaria);
+  background: #0a0a0a85;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 /* Styles nav desktop */
@@ -34,12 +34,15 @@ header.rolagem-header {
 .nav-desktop ul li a {
   padding-inline: 20px;
   padding: 10px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 500;
-
   color: var(--cor-secundaria-textos);
   border-radius: 5px;
   transition: 0.3s ease-in-out;
+}
+
+.nav-desktop ul li i {
+  font-size: 1.2rem;
 }
 
 /* Styles botão menu mobile */
@@ -50,8 +53,6 @@ header.rolagem-header {
 .btn-menu-mobile div {
   height: 3px;
   margin: 10px 0;
-
-  background-color: var(--cor-secundaria);
   transition: 0.3s;
 }
 
@@ -84,17 +85,14 @@ header.rolagem-header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   top: 0;
-
   width: 0;
   height: 0;
-
   text-align: center;
-  background-color: var(--cor-secundaria);
   overflow: hidden;
   transition: 0.5s;
+  margin-top: -5.2rem;
 }
 
 /* Styles nav mobile aberto */
@@ -104,21 +102,34 @@ header.rolagem-header {
 }
 
 .nav-mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3rem;
   width: 100%;
+  padding: 5.3rem 0;
+  background-color: #0a0a0ac5;
+}
+
+.nav-mobile ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .nav-mobile a {
   display: block;
   font-size: 22px;
   font-weight: 500;
-  padding: 50px 0;
   transition: 0.5s;
 }
 
-.nav-mobile a:active {
-  border: solid 1px var(--cor-principal);
+.nav-mobile ul li i {
+  font-size: 1.3rem;
 }
 
+/* Responsividade */
 @media (min-width: 768px) {
   .nav-desktop {
     display: none;
@@ -140,16 +151,14 @@ header.rolagem-header {
 }
 
 @media (min-width: 1280px) {
-  .nav-desktop a:hover {
-    background-color: rgb(43, 57, 99);
+  .nav-desktop ul li a:hover {
+    color: var(--cor-principal);
   }
 
-  /* Styles header com efeito rolagem */
-  header.rolagem-header a {
-    color: var(--cor-secundaria);
+  .nav-desktop ul li i {
+    color: var(--cor-principal);
   }
 
-  /* Styles seção principal */
   .nav-desktop {
     display: block;
   }

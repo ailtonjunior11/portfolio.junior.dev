@@ -1,7 +1,6 @@
 .principal {
   display: flex;
   align-items: center;
-
   min-height: 100vh;
 }
 
@@ -79,14 +78,14 @@
 @media (min-width: 768px) {
   .principal {
     justify-content: center;
-    margin: 55px 0 0;
+    /* margin: 55px 0 0; */
   }
 }
 
 @media (max-width: 900px) {
   .principal {
     justify-content: center;
-    margin: 55px 0 0;
+    /* margin: 55px 0 0; */
   }
 
   .principal h1 {
@@ -102,7 +101,7 @@
 @media (min-width: 1114px) {
   .principal {
     justify-content: center;
-    margin: 55px 0 0;
+    /* margin: 55px 0 0; */
   }
 
   .principal h1 {
@@ -113,7 +112,7 @@
 @media (min-width: 1280px) {
   .principal {
     justify-content: start;
-    margin: 80px 0 0 4%;
+    /* margin: 80px 0 0 4%; */
   }
 
   .principal h1 {
