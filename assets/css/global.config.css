@@ -35,27 +35,30 @@ body {
   padding: 100px 5%;
 }
 
+/* Styles divisão */
+.division {
+  width: 30%;
+  height: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background: #182d41;
+}
+
 /* Styles fundo body */
 body::before {
   content: "";
   background-image: url(../../img/img-background.jpg);
   background-size: cover;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
   width: 100%;
   height: 100%;
-
   z-index: -1;
   opacity: 0.3;
   object-fit: cover;
 }
-
-/* Style seção divisão */
 
 /* Styles botão topo */
 .btntopo {
@@ -102,5 +105,5 @@ img {
 footer {
   text-align: center;
   padding: 20px 5%;
-  border-top: solid 1px var(--cor-secundaria);
+  background: #182d41;
 }

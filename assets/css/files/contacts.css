@@ -1,3 +1,7 @@
+#contatos {
+  background: #182d41;
+}
+
 .botoes-contatos {
   display: flex;
   flex-wrap: wrap;
