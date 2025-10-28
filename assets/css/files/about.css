@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   gap: 40px;
   align-items: center;
-
   max-width: 1200px;
 }
 
@@ -26,20 +25,17 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-
   cursor: default;
 }
 
 .tag-habilidades {
   font-size: 14px;
   font-weight: 500;
-
   padding: 8px 15px;
   margin: 0 10px 10px 0;
-
   border-radius: 5px;
   color: var(--cor-textos);
-  background-color: var(--cor-secundaria);
+  background-color: #4d7cfe6c;
 }
 
 /* Responsividade */
